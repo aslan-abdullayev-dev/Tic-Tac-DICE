@@ -1,0 +1,354 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#nav {
+  width: 100%;
+  height: 110px;
+  padding: 15px 50px;
+  border-bottom: 7px solid yellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: darkgreen;
+  color: white;
+}
+
+#nav .game-manual {
+  width: 900px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#nav .game-manual .how-to-play {
+  width: 250px;
+}
+
+#nav .game-manual .how-to-play > a {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 7px;
+}
+
+#nav .game-manual .how-points-earned {
+  width: 400px;
+  padding: 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  gap: 5px;
+}
+
+#nav .game-manual .how-points-earned p {
+  margin: 0;
+}
+
+#nav .game-manual .action-points-cost {
+  width: 300px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  gap: 7px;
+}
+
+#nav .game-manual .action-points-cost p {
+  margin: 0;
+}
+
+#nav .move-number-container {
+  display: none;
+}
+
+#nav .move-number-container p {
+  margin: 0;
+}
+
+#nav .move-number-container.display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#nav .player-info {
+  width: 250px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav .player-info .player * {
+  margin: 15px 0;
+}
+
+#main {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 110px);
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: darkgreen;
+  border-bottom: 7px solid yellow;
+}
+
+#main .start-again {
+  display: none;
+  width: 220px;
+  height: 475px;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  border: 1px solid yellow;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: rgba(153, 205, 50, 0.884);
+}
+
+#main .start-again.activate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-between;
+      -ms-flex-align: space-between;
+          align-items: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  gap: 60px;
+}
+
+#main .start-again h1 {
+  color: red;
+  font-size: 24px;
+}
+
+#main .start-again #new-game-btn {
+  background-color: yellowgreen;
+  width: 100%;
+  height: 25%;
+  cursor: pointer;
+  color: red;
+  font-size: 22px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid yellow;
+  border-top: 1px solid yellow;
+}
+
+#main .start-again #new-game-btn:hover {
+  background-color: green;
+}
+
+#main #game-info-table {
+  width: 20%;
+  height: 100%;
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: yellowgreen;
+  color: red;
+}
+
+#main #game-info-table .last-dice-result {
+  width: 100%;
+  height: 50%;
+  font-size: 48px;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 4px solid yellow;
+}
+
+#main #game-info-table .notifications {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 1.5;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+#main #tiles {
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#main #tiles .tile {
+  width: 20%;
+  height: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid yellow;
+  color: red;
+  font-weight: 700;
+  font-size: 60px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.514);
+  cursor: pointer;
+}
+
+#main #buttons {
+  width: 20%;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main #buttons button {
+  width: 100%;
+  height: 25%;
+  background-color: yellowgreen;
+  border: 1px solid yellow;
+  color: red;
+  font-size: 24px;
+  pointer-events: none;
+}
+
+#main #buttons button:hover:not(.blurr) {
+  background-color: green;
+}
+
+#main #buttons button.started {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+#main #buttons button.blurr {
+  opacity: 0.6;
+}
+
+#main #buttons button.denied {
+  -webkit-animation-name: aslan;
+          animation-name: aslan;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes aslan {
+  0% {
+    background-color: yellowgreen;
+  }
+  25% {
+    background-color: rgba(255, 42, 42, 0.534);
+  }
+  100% {
+    background-color: yellowgreen;
+  }
+}
+
+@keyframes aslan {
+  0% {
+    background-color: yellowgreen;
+  }
+  25% {
+    background-color: rgba(255, 42, 42, 0.534);
+  }
+  100% {
+    background-color: yellowgreen;
+  }
+}
+/*# sourceMappingURL=style.css.map */
